@@ -1,0 +1,65 @@
+.container {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#inputF {
+  width: 250px;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border-color:gray;
+}
+
+#btn {
+  width: 70px;
+  height: 37px;
+  font-size: 15px;
+  border-radius: 8px;
+  background-color: blue;
+  color: white;
+}
+
+.display {
+  margin-top: 40px;
+  margin-left: -100px;
+}
+
+.tab-navigation {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tab-navigation li {
+  padding-left: 60px;
+  margin-left: -30px;
+  padding-right: 60px;
+  margin-bottom: -5px;
+}
+
+li:hover {
+  border-bottom: 2px solid blue;
+}
+
+hr {
+  width: 22%;
+}
+
+
+.tab-container {
+  margin-left: -250px;
+  margin-top: 30px;
+}
+
+#css {
+  margin-left: -35px;
+}
+
+#html {
+  margin-left: -20px;
+}
