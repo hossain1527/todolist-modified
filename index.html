@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toddolist</title>
+    <title>todo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,9 +11,9 @@
 
     <div class="container">
         <ul class="tab-navigation">
-            <li>All</li>
-            <li>Active</li>
-            <li>Completed</li>
+            <li data-tab-target="#all">All</li>
+            <li data-tab-target="#active">Active</li>
+            <li data-tab-target="#completed">Completed</li>
         </ul>
         <hr>
         <input id="inputF" type="text">
@@ -22,18 +22,43 @@
         <br><br>
         
          <div class="tab-container-area">
-            <div class="tab-container">
-                
-               <input id="js" type="checkbox"><label for="">JavaScript</label><br>
-               <input id="css" type="checkbox"><label for="">CSS</label><br>
-               <input id="html" type="checkbox"><label for="">HTML</label><br>
-        
-               <div class="display" id="output"></div>
+            <div class="tab-container1">
+               
+             <div id="all" data-tab-content class="active"> 
+               <input id="newS" type="checkbox" class="chbx"><label>New State</label><br>
+               <input id="complete" type="checkbox" class="chbx"><label>Complete State</label><br>
+               <div id="crnt"><input id="current" type="checkbox" class="chbx" onclick="tick();"><label>Current State</label><br></div>
+             </div>
+               
           
             </div>
+
+            <div class="tab-container2">
+               
+               <div id="active" data-tab-content> 
+                <input id="newS" type="checkbox" class="chbx"><label>New State</label><br>
+                <input id="complete" type="checkbox" class="chbx"><label>Complete State</label><br>
+                
+               </div>
+                
+           
+             </div>
+
+             <div class="tab-container3">
+                
+               <div id="completed" data-tab-content>
+                <div id="newSs"><input id="newS" type="checkbox" class="chbx1" onclick="tick1();"><label>New State</label><br></div>
+                  <i class="fa fa-refresh"></i>
+                <div id="newComp"><input id="complete" type="checkbox" class="chbx1" onclick="tick1();"><label>Complete State</label><br></div>
+                <div id="newCrnt"><input id="current" type="checkbox" class="chbx1" onclick="tick1();"><label>Current State</label><br></div>
+               </div>
+                
+           
+             </div>
           </div>
+          <div class="display" id="output"></div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

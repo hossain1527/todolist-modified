@@ -51,15 +51,37 @@ hr {
 }
 
 
-.tab-container {
+.tab-container1 {
   margin-left: -250px;
   margin-top: 30px;
 }
 
-#css {
-  margin-left: -35px;
+.tab-container2 {
+  margin-left: -250px;
+  margin-top: 30px;
 }
 
-#html {
-  margin-left: -20px;
+.tab-container3 {
+  margin-left: -250px;
+  margin-top: 30px;
+  
+}
+
+#complete {
+  margin-left: 34px;
+  margin-top: 10px;
+}
+
+#current {
+  margin-left: 21px;
+  margin-top: 10px;
+  
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
 }
